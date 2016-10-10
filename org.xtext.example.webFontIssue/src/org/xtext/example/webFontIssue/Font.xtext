@@ -1,0 +1,9 @@
+grammar org.xtext.example.webFontIssue.Font with org.eclipse.xtext.common.Terminals
+
+generate font "http://www.xtext.org/example/webFontIssue/Font"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
